@@ -1,0 +1,21 @@
+{% extends 'layouts/base.html' %}
+{% load crispy_forms_filters %}
+{% load static %}
+{% block content %}
+    <div class="row">
+        <div class="col-lg-6 offset-lg-3 mt-5">
+            <div class="card">
+                <form action="{% url 'main:index' %}" method="POST" enctype="multipart/form-data">
+                    <div class="card-header"><img src="{% static 'img/logo.svg'%}" ></div>
+                    <div class="card-body">
+                        {% csrf_token %}
+                        {{ form | crispy }}
+                    </div>
+                    <div class="card-footer text-center">
+                        <button class="btn btn-danger btn-block" type="submit">{{ request.title }}</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

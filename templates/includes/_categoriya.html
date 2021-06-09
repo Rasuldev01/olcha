@@ -1,0 +1,17 @@
+{% load static %}
+<div class="slick-slider center">
+    {% for cat in category %}
+        <div class="p-2">
+            <div class="p-4 border cat-card">
+                <a class="row" href="#">
+                    <div class="col-5">
+                        <img src="{{ cat.img.url }}" alt="" class="cat-image">
+                    </div>
+                    <div class="col-7 text-center d-flex align-items-center">
+                        <span>{{ cat.name_uz }}</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    {% endfor %}
+</div>

@@ -1,0 +1,61 @@
+{% load static %}
+
+<div id="carouselExampleControls" class="carousel slide car w-100 h-100 d-flex align-items-center" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <img class="d-block w-100" src="{% static 'img/tovar.png' %}" alt="First slide">
+                    </div>
+                    <div class="col-6 my-auto">
+                        <p class="car-info">Avto jihoz</p>
+                        <p>Avtomobilingizga yangi nafas bering, butun O'zbekiston yetkazib beramiz.</p>
+                        <button class="btn btn-outline-dark">Sotib olish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <img class="d-block w-100" src="{% static 'img/parfume.png' %}" alt="First slide">
+                    </div>
+                    <div class="col-6 my-auto">
+                        <p class="car-info">Atirlar muddatli to'lovga</p>
+                        <p>Barchasi asl "Orginal"</p>
+                        <button class="btn btn-outline-dark">Sotib olish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <img class="d-block w-100" src="{% static 'img/car-person.png' %}" alt="First slide">
+                    </div>
+                    <div class="col-6 my-auto">
+                        <p class="car-info">Tezkor muddatli to'lov</p>
+                        <p>Butun O'zbekiston bo'ylab. Pasport va to'lov kartasi bo'ylab kifoya.</p>
+                        <button class="btn btn-outline-dark">Sotib olish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <div class=" p-2 rounded-circle car-prev">
+            <span class="carousel-control-prev-icon d-flex my-auto" aria-hidden="true"></span>
+        </div>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <div class="p-2 rounded-circle car-prev">
+            <span class="carousel-control-next-icon d-flex my-auto" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </div>
+    </a>
+</div>
+
